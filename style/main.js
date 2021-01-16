@@ -1,17 +1,37 @@
 $(document).ready(function(){
 
+ //menu버튼 이벤트
+  $('.btn1').on({
+    click : function(e){
+      e.preventDefault();
+      var offset1 = $('#section1').offset();
 
-  var nav=$('#menu li')
-  var cont=$('#contents > div')
-  $(window).scroll(function(){
-      var wScroll=$(this).scrollTop();
+      $("html").animate({
+        scrollTop: offset1.top
+      }, 500);
+    }
+  })
 
-      for(var i=0; i<cont.length; i++){
-          if(wScroll >= cont.eq(i).offset().top){
-              nav.removeClass('active');
-              nav.eq(i).addClass('active');
-          }
-      }
+  $('.btn2').on({
+    click : function(e){
+      e.preventDefault();
+      var offset2 = $('#section2').offset();
+
+      $("html").animate({
+        scrollTop: offset2.top
+      }, 500);
+    }
+  })
+
+  $('.btn3').on({
+    click : function(e){
+      e.preventDefault();
+      var offset3 = $('#section4').offset();
+
+      $("html").animate({
+        scrollTop: offset3.top
+      }, 500);
+    }
   })
 
 
