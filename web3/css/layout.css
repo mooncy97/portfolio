@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+
+.wrapper{width: 100%; position: relative;}
+.header{width: 100%; height: 60px; position: fixed; top: 0; z-index: 1; background-color: #fff; }
+.head-wrap{ text-align:right;}
+
+
+.search{margin:20px 3% 0 0;}
+
+.search-bar{text-align: center ;width: 100%; height: 50px; line-height: 50px ;background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 60px; display: none; z-index: 5;}
+.text-search{font-size: 11px ;width: 50%; height: 20px; border-radius: 25px; border: none; outline: none; position: relative;}
+.search-icon{position: absolute; top: 20px; right: 25%;}
+
+.lnb-btn{margin:15px 5% 0 0; display:inline-block; width:30px; height:30px;}
+.lnb-btn span{display:block; width:80%; height:1px; background-color:#222;}
+.lnb-btn span:nth-of-type(1){margin: 8px 0 8px 0;}
+.lnb-btn span:nth-of-type(2){margin-bottom: 8px;}
+
+.gnb-wrap{position:absolute; top:0; right: -100%; width: 70%; height: 900px; background-color: #fff; z-index: 100;}
+.gnb-wrap h2{text-align: center; padding-top: 15px; border-bottom: 1px solid #cbcbcb; background-color: #fff;}
+.gnb-wrap span{position: absolute; top: 30px; right: 6%;}
+
+.gnb-deth1{width: 100%;}
+.gnb-deth1 > li > a{width:100%; height: 45px; line-height: 45px; font-size: 15px ;
+                    display: inline-block;border-bottom: 1px solid #cbcbcb; padding-left: 3%; background-color: #f7f7f7;}
+.gnb-deth1 .season{color: tomato;}
+
+.gnb-deth2{width: 100%; background-color: #fff;}
+.gnb-deth2 > li > a{width: 100%; display: inline-block;padding-left: 6%; height: 35px; line-height: 35px;}
+
+
+.gnb-deth2 > li{border-bottom: 1px solid #cbcbcb;}
+
+
+
+/* footer */
+.footer{width: 100%; position: relative;}
+.footer_back{background-color: #818181; height: 290px;}
+
+.footer_list{text-align: center; padding-top: 20px; width: 100%;}
+.footer_list:after{content: ''; width: 90%; height: 1px; background-color: #f1f1f1; display: block; margin: 10px auto;}
+
+.footer_list li{display: inline-block; width: 20%; border-right: 1px dotted #f1f1f1;}
+.footer_list li:last-child{border: none;}
+.footer_list li a{ color: #f1f1f1;}
+
+.sns_icon{text-align: center; width: 100%; margin-top: 20px;}
+.sns_icon li{ display: inline-block; padding-right: 20px; height: 20px; line-height: 20px;}
+.sns_icon li:last-child{padding-right: 0;}
+
+.address,.copy-wrap{text-align: center; color: #fff; font-size: 11px; margin-top: 40px;}
+.copy{padding-top: 20px; font-size: 10px;}

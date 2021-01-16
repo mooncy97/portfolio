@@ -1,0 +1,591 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>양평군청</title>
+<meta name="robots" content="noindex, nofollow" />
+<meta name="keywords" content="양평군청" />
+<meta name="description" content="양평군청"/>
+<meta name="author" content="양평군청"/>
+
+<link rel="stylesheet" type="text/css" href="style/reset.css"/>
+<link rel="stylesheet" type="text/css" href="style/common.css"/>
+<link rel="stylesheet" type="text/css" href="style/layout.css"/>
+<link rel="stylesheet" type="text/css" href="style/sub1.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"> 
+
+<script>
+    $(document).ready(function(){
+   
+        // gnb
+        var bg=$('<div class="gnb-line"></div>');
+            $('.header').append(bg)
+
+    $('.gnb-deth1 > li > a').on({
+        mouseenter:function(){
+            $(this).css({
+                'background':'#006a9b',
+                'color':'#fff'
+            })
+
+            $(this).parent().children().next().css({
+                'background':'#f7f7f7'
+            })
+
+            $('.gnb-deth2 , .gnb-line').stop().slideDown();
+            
+
+        },
+        mouseleave:function(){
+            $(this).css({
+                'background':'#fff',
+                'color':'#333',
+                'border-bottom':'1px solid #cbcbcb'
+            })
+            
+            $(this).parent().children().next().css({
+                'background':'#fff'
+            })
+
+            $('.gnb-deth2 , .gnb-line').stop().slideUp();
+            
+        }
+    })
+
+    $('.gnb-deth2').on({
+        mouseenter:function(){
+            $(this).parent().find('>a').css({
+                'background':'#006a9b',
+                'color':'#fff'
+            })
+
+            $(this).css({
+                'background':'#f7f7f7'
+            })
+
+            $('.gnb-deth2 , .gnb-line').stop().slideDown();
+            
+        },
+        mouseleave:function(){
+            $(this).parent().find('>a').css({
+                'background':'#fff',
+                'color':'#333',
+                'border-bottom':'1px solid #cbcbcb'
+            })
+
+            $(this).css({
+                'background':'#fff'
+            })
+
+            $('.gnb-deth2 , .gnb-line').stop().slideUp();
+            
+        }
+    })  
+    
+
+
+
+
+        //lnb 
+        
+        $('.sub-list > li:gt(1)>.sub-deth2').hide();
+        
+        $('.sub-list > li > a').eq(1).css({
+            'background-color':'#5d79ab',
+            'color':'#fff'
+        })
+
+        $('.sub-list >li >a').on('click',function(e){
+            e.preventDefault();
+            
+            /*슬라이드업다운 여러번 안 눌리게 거는 조건문*/
+
+            $(this).next().stop().slideToggle(500);
+
+            if($(this).find('i').hasClass('fa fa-chevron-up'))
+            {
+                console.log("확인");
+                $(this).find('i').prop('class','fa fa-chevron-down')
+            }else{
+                $(this).find('i').prop('class','fa fa-chevron-up')
+            }
+
+            
+
+        })
+
+
+        
+    })
+
+    
+</script>
+</head>
+
+<body>
+<div id="skipMenu">
+    <a href="#gnb">주메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+    <a href="#footer">하단부분 바로가기</a>
+</div>
+
+<div id="wrapper">
+ <!-- ================header================== -->
+    <div class="header"> <!--100%-->
+        <div class="header-info-wrap"> <!--100%-->
+            <div class="header-info clearfix"> <!--1220px-->
+
+                <ul class="intro-list">
+                    <li><a href="#">양평군의회</a></li>
+                    <li><a href="#">양평관광</a></li>
+                    <li><a href="#">양평도서관</a></li>
+                    <li><a href="#">평생학습센터</a></li>
+                    <li><a href="#">보건소</a></li>
+                </ul>
+
+                <ul class="login-bar">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">전체메뉴</a></li>
+                    <li>
+                        <form method="post" action="#" name="lang">
+                            <select name="lang-list" class="lang-list" title="언어별사이트선택">
+                                <option value="">Language</option>
+                                <option value="">English</option>
+                                <option value="">Japanese</option>
+                                <option value="">chinese</option>
+                            </select>
+
+                            <button class="btn-lang" title="선택사이트이동(새창)">GO</button>
+                        </form>
+                    </li>
+                </ul>           
+            </div>
+        </div>
+
+
+
+
+        <div class="header-intro clearfix"> <!--1220px-->
+            <h1><a href="index.html"><img src="images/header/logo_intro.jpg" alt="맑은행복 양평"/></a></h1>
+
+            <div class="search-bar">
+                <form method="post" action="#" name="search-bar">
+                   <label for="search" class="search-txt">통합검색</label>
+                    <input type="text" id="search" title="검색어를 입력해주세요"/>
+
+                    <input type="image" class="icon-search" src="images/header/icon_searchbar.jpg" alt="검색버튼"/>
+                </form>
+            </div>
+
+            <a href="#" class="weather"><img src="images/header/weather_img.jpg" alt="날씨"/></a>
+        </div>
+
+
+        <div class="header-gnb-wrap"> <!--100%-->
+            
+            <div class="header-gnb"> <!--1220px-->
+                <h2 class="skip">주메뉴</h2>
+
+                <ul class="gnb-deth1 clearfix">
+                    <li><a href="sub1.html">알림마당</a>
+                        <ul class="gnb-deth2 line_l">
+                            <li><a href="#">새소식</a></li>
+                            <li><a href="#">고시/공고</a></li>
+                            <li><a href="#">계약입찰정보</a></li>
+                            <li><a href="#">재정운영현황</a></li>
+                            <li><a href="#">법률정보</a></li>
+                            <li><a href="#">청탁금지법 안내</a></li>
+                            <li><a href="#">통계</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="sub_join1.html">전자민원</a>
+                        <ul class="gnb-deth2">
+                            <li><a href="#">민원신청</a></li>
+                            <li><a href="#">민원처리조회</a></li>
+                            <li><a href="#">여권민원</a></li>
+                            <li><a href="#">민원편의제도</a></li>
+                            <li><a href="#">종합신고센터</a></li>
+                            <li><a href="#">기타민원</a></li>
+                            <li><a href="#">행정서비스헌장</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="sub_join2.html">참여마당</a>
+                        <ul class="gnb-deth2">
+                            <li><a href="#">자유게시판</a></li>
+                            <li><a href="#">칭찬합시다</a></li>
+                            <li><a href="#">정책참여</a></li>
+                            <li><a href="#">민원모니터</a></li>
+                            <li><a href="#">주민참여교육</a></li>
+                            <li><a href="#">주민제안</a></li>
+                            <li><a href="#">규제혁신</a></li>
+                            <li><a href="#">적극행정/소극행정</a></li>
+                            <li><a href="#">정부혁신</a></li>
+                            <li><a href="#">중소기업피해신고</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub_join3.html">양평소개</a>
+                        <ul class="gnb-deth2">
+                            <li><a href="#">양평현황</a></li>
+                            <li><a href="#">자매도시</a></li>
+                            <li><a href="#">군정안내</a></li>
+                            <li><a href="#">청사안내</a></li>
+                            <li><a href="#">열린군수실</a></li>
+                            <li><a href="#">역대군수</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub_login.html">분야별정보</a>
+                        <ul class="gnb-deth2 last">
+                            <li><a href="#">복지</a></li>
+                            <li><a href="#">양평농업</a></li>
+                            <li><a href="#">건설</a></li>
+                            <li><a href="#">기업</a></li>
+                            <li><a href="#">환경</a></li>
+                            <li><a href="#">보건</a></li>
+                            <li><a href="#">위생</a></li>
+                            <li><a href="#">주거</a></li>
+                            <li><a href="#">생활정보</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- ================container================= -->
+
+
+    <div class="container clearfix" id="container"><!--1220px-->
+
+        <div class="sub-left fl"><!--왼쪽 서브메뉴-->
+           
+            <h3 class="title"><img src="images/sub1/sub_title.png" alt="알림마당"/></h3>
+            <ul class="sub-list">
+                <li><a href="#">새소식<span class="gnb-con"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+                    <ul class="sub-deth2">
+                        <li><a href="#">고시공고</a></li>
+                        <li><a href="#">입법예고</a></li>
+                        <li><a href="#">군보</a></li>
+                        <li><a href="#">시험정보</a></li>
+                    </ul>   
+                </li>
+                <li><a href="#" class="current-lnb1">공고<span class="gnb-con"><i class="fa fa-chevron-up" aria-hidden="true"></i></span></a>
+                        <ul class="sub-deth2 on">
+                            <li><a href="#">고시공고</a></li>
+                            <li><a href="#">입법예고</a></li>
+                            <li><a href="#">군보</a></li>
+                            <li><a href="#">시험정보</a></li>
+                        </ul>      
+                </li>
+                <li><a href="#">계약입찰정보<span class="gnb-con"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+                    <ul class="sub-deth2">
+                            <li><a href="#">고시공고</a></li>
+                            <li><a href="#">입법예고</a></li>
+                            <li><a href="#">군보</a></li>
+                            <li><a href="#">시험정보</a></li>
+                        </ul>  
+                </li>
+                <li><a href="#">재정운영현황<span class="gnb-con"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+                    <ul class="sub-deth2">
+                            <li><a href="#">고시공고</a></li>
+                            <li><a href="#">입법예고</a></li>
+                            <li><a href="#">군보</a></li>
+                            <li><a href="#">시험정보</a></li>
+                        </ul>  
+                </li>
+                <li><a href="#">법률정보<span class="gnb-con"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+                    <ul class="sub-deth2">
+                            <li><a href="#">고시공고</a></li>
+                            <li><a href="#">입법예고</a></li>
+                            <li><a href="#">군보</a></li>
+                            <li><a href="#">시험정보</a></li>
+                        </ul>  
+                </li>
+                <li><a href="#">청탁금지법안내<span class="gnb-con"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+                    <ul class="sub-deth2">
+                            <li><a href="#">고시공고</a></li>
+                            <li><a href="#">입법예고</a></li>
+                            <li><a href="#">군보</a></li>
+                            <li><a href="#">시험정보</a></li>
+                        </ul>  
+                </li>
+                <li><a href="#">통계<span class="gnb-con"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a>
+                    <ul class="sub-deth2">
+                            <li><a href="#">고시공고</a></li>
+                            <li><a href="#">입법예고</a></li>
+                            <li><a href="#">군보</a></li>
+                            <li><a href="#">시험정보</a></li>
+                        </ul>  
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub-right fr clearfix"><!--오른쪽 서브메뉴-->
+            <h3 class="notice-title">보도자료</h3>
+            <p class="location pt5"><span class="home">알림마당 </span>&gt; 새소식 &gt; <span class="current">보도자료</span></p>
+
+            <div class="share pb5">
+                <a href="#" class="icon1"><span class="skip">공유하기</span></a>
+                <a href="#" class="icon2"><span class="skip">인쇄하기</span></a>
+            </div>
+
+
+            <div class="board clearfix">
+                <p class="fl"><span class="page pl20">5,635건</span><span class="pl10"><span class="num">페이지 1</span>/499</span></p>
+
+                <form method="post" action="#" name="board" class="board-search fr">
+                    <select name="board-sel" title="알림마당 검색분류 선택" class="select-bar">
+                        <option>전체</option>
+                        <option>제목</option>
+                        <option>내용</option>
+                        <option>작성자</option>
+                        <option>작성일</option>
+                    </select>
+                    <input type="text" name="board-text" title="검색어입력" class="text-bar"/>
+                    <button class="btn-search">검색</button>
+                </form>
+            </div>
+
+            <div class="table mt25">
+                <table summary="번호,제목,작성자,작성일,조회수가 나와있는 알림마당의 보도자료 게시판입니다">
+                    <caption class="skip">보도자료 게시판</caption>
+                    <colgroup>
+                        <col width="10%"/>
+                        <col width="*%"/>
+                        <col width="20%"/>
+                        <col width="10%"/>
+                        <col width="10%"/>
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">작성일</th>
+                            <th scope="col">조회수</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>543</td>
+                            <td class="td-left"><a href="#">청운면 지역사회보장협의체, 사랑의 텃밭 고구마 수확</a></td>
+                            <td>관광과</td>
+                            <td>2020-10-14</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <td>542</td>
+                            <td class="td-left"><a href="#">언택트 시대, 지친 마음을 달래는 인문학 백신을 맞자</a></td>
+                            <td>용문면</td>
+                            <td>2020-10-13</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <td>541</td>
+                            <td class="td-left"><a href="#">코로나19로 지친 마음을 달래줄 드라이브 인 콘서트 개최!</a></td>
+                            <td>문화체육과</td>
+                            <td>2020-10-13</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>540</td>
+                            <td class="td-left"><a href="#">양평군, 아토피·천식 예방『알레르기질환 환아 지원사업』접수 시작</a></td>
+                            <td>토지정보과</td>
+                            <td>2020-10-13</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>539</td>
+                            <td class="td-left"><a href="#">서종면적십자봉사회, 사랑의 집수리 봉사로 값진 구슬땀</a></td>
+                            <td>보건소</td>
+                            <td>2020-10-12</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>538</td>
+                            <td class="td-left"><a href="#">양평군, 2020년 퍼실리테이터(토론촉진자) 양성과정 개강</a></td>
+                            <td>보건소</td>
+                            <td>2020-10-12</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>537</td>
+                            <td class="td-left"><a href="#">제2차 '2020년 군민과 함께하는 소통한마당' 추진보고회 개최</a></td>
+                            <td>문화체육과</td>
+                            <td>2020-10-12</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>536</td>
+                            <td class="td-left"><a href="#">강상면 새마을회 3R 자원재활용 수집운동 전개</a></td>
+                            <td>문화체육과</td>
+                            <td>2020-10-12</td>
+                            <td>42</td>
+                        </tr>
+                        <tr>
+                            <td>535</td>
+                            <td class="td-left"><a href="#">양평군, 형형색색 단풍으로 물들어~</a></td>
+                            <td>문화체육과</td>
+                            <td>2020-10-11</td>
+                            <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>534</td>
+                            <td class="td-left"><a href="#">용문면지역사회보장협의체, 사랑 나눔 고구마 수확으로 구슬땀</a></td>
+                            <td>서종면</td>
+                            <td>2020-10-11</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>533</td>
+                            <td class="td-left"><a href="#">두물머리 수중·수변 환경정화 실천으로 깨끗해져</a></td>
+                            <td>관광과</td>
+                            <td>2020-10-10</td>
+                            <td>31</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <ul class="page-num">
+                <li><a href="#" class="btn-page1"><span class="skip">처음페이지로이동</span></a></li>
+                <li><a href="#" class="btn-page2"><span class="skip">이전페이지로이동</span></a></li>
+                <li><a href="#"><span class="now">1</span></a></li>
+                <li><a href="#" class="page-list">2</a></li>
+                <li><a href="#" class="page-list">3</a></li>
+                <li><a href="#" class="page-list">4</a></li>
+                <li><a href="#" class="page-list">5</a></li>
+                <li><a href="#" class="page-list">6</a></li>
+                <li><a href="#" class="page-list">7</a></li>
+                <li><a href="#" class="page-list">8</a></li>
+                <li><a href="#" class="page-list">9</a></li>
+                <li><a href="#" class="page-list">10</a></li>
+                <li><a href="#" class="btn-page3"><span class="skip">다음페이지로이동</span></a></li>
+                <li><a href="#" class="btn-page4"><span class="skip">마지막페이지로이동</span></a></li>
+            </ul>
+
+            <div class="research-box clearfix">
+                <div class="research-wrap clearfix">
+                    <span class="fl pr45"><img src="images/sub1/icon_research.png" alt="설문조사 아이콘"/></span>
+                    <form method="post" action="#" name="research" class="research fl clearfix">
+                         <p class="pb15">이 페이지에서 제공하는 정보에 대하여 만족하십니까?</p>
+                    
+                        <input type="radio" id="check1" name="check"/>
+                        <label for="check1">매우만족</label>
+                        <input type="radio" id="check2" name="check"/>
+                        <label for="check2">만족</label>
+                        <input type="radio" id="check3" name="check"/>
+                        <label for="check3">보통</label>
+                        <input type="radio" id="check4" name="check"/>
+                        <label for="check4">불만족</label>
+                        <input type="radio" id="check5" name="check"/>
+                        <label for="check5">매우불만족</label>
+
+                        <button class="btn-res fr">평가하기</button>
+                    </form>
+                </div>
+
+               
+            </div>
+
+            <div class="department">
+                <span class="dep-wrap"><span class="tel1">담당부서</span>  소통협력담당관 홍보팀</span>
+                <span class="dep-wrap"><span class="tel2">전화번호</span>  031-770-2055</span>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="footer-wrap" id="footer"><!--100%-->
+        
+        <div class="banner-wrap"><!--100%-->
+            <div class="banner clearfix"><!--1220px-->
+                <h3 class="fl">배너모음</h3>
+
+
+                <div class="banner-zone">
+                    <ul class="banner-list clearfix">
+                        <li><a href="#">공익제보핫라인</a></li>
+                        <li><a href="#">착한가격업소</a></li>
+                        <li><a href="#">소극행정신고</a></li>
+                        <li><a href="#">경기도 헬프라인</a></li>
+                        <li><a href="#">e나라도움</a></li>
+                        <li><a href="#">메이크올</a></li>
+                        <li><a href="#">양평친환경 로컬푸드</a></li>
+                        <li><a href="#">행복출산</a></li>
+                        <li><a href="#">내고장알리미</a></li>
+                        <li><a href="#">공익제보핫라인</a></li>
+                        <li><a href="#">착한가격업소</a></li>
+                        <li><a href="#">소극행정신고</a></li>
+                        <li><a href="#">경기도 헬프라인</a></li>
+                        <li><a href="#">e나라도움</a></li>
+                        <li><a href="#">메이크올</a></li>
+                        <li><a href="#">양평친환경 로컬푸드</a></li>
+                        <li><a href="#">행복출산</a></li>
+                        <li><a href="#">내고장알리미</a></li>
+                    </ul>
+                </div>
+                
+                <div class="btn-banner">
+                    <a href="#" class="btn-banner-prev"><span class="skip">이전버튼</span></a>
+                    <a href="#" class="btn-banner-next"><span class="skip">다음버튼</span></a>
+                </div>
+            </div>
+        </div>            
+
+        <div class="footer-bar-wrap"> <!--100%-->
+            <div class="footer clearfix"><!--1220px-->
+
+                <p class="footer-logo fl"><img src="images/footer/footer_logo01.png" alt="맑은행복 양평"/></p>
+
+                    <div class="link-wrap fl">
+                        <ul class="footer-link clearfix">
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">저작권정책</a></li>
+                            <li><a href="#">홈페이지개선건의</a></li>
+                            <li><a href="#">뷰어다운로드</a></li>
+                            <li><a href="#">청사안내</a></li>
+                            <li><a href="#">조직안내</a></li>
+                            <li><a href="#">직원안내</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+
+
+                        <address>
+                            <span>12554 경기도 양평군 양평읍 군청앞길2</span>
+                            <span>전화 : 031-770-2114</span>
+                            <span>팩스 : 031-770-2803</span>
+                        </address>      
+
+                        <p class="copy">Copyright(c) 2020 YANGPYEONG GUN. All rights Reserved.</p>
+                    </div>
+
+                <div class="wa-logo fr"><img src="images/footer/footer_logo02.png" alt="과학기술정보통신부 WEB ACCESSIBILITY"/></div>
+            </div>                
+      </div>  
+ </div>
+
+
+
+</div>
+</body>
+
+</html>

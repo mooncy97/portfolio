@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+/* banner */
+.banner{width: 100%; height: 750px; position: relative; }
+.banner-img{width: 100%; height: 100%;}
+.banner-img ul li{position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.banner-img ul li.banner_01{background: url(../images/banner_img_01_.png) no-repeat center center ; background-size: cover; }
+.banner-img ul li.banner_01 span{font-family: 'Langar', cursive;font-size: 7rem; color: #f1f1f1; text-shadow: 5px 5px 2px #222;font-weight: 800; position: absolute; top: 20%; left: 15%; transform: rotate(-15deg);}
+
+.banner-img ul li.banner_02{background: url(../images/banner.png) no-repeat center center ; background-size: cover;}
+
+.banner-btn a{width: 70px; height: 70px; display: inline-block;}
+.banner-btn .prev-btn{position: absolute; left: 2%; top: 40%; border-top: 3px solid #fff; border-left: 3px solid #fff; transform: rotate(-45deg);}
+.banner-btn .next-btn{position: absolute; right: 2%; top: 40%; border-top: 3px solid #fff; border-right: 3px solid #fff; transform: rotate(45deg);}
+
+
+/* menu-list */
+.section_01{width: 100%; padding: 100px 0;background: url(../images/menu_bg.png) repeat-x center; background-size: cover;}
+.menu-list{width: 1270px; margin: 0 auto;}
+.menu-title{text-align: center; transform: translateY(-120px); opacity: 0;}
+.menu-title strong{font-family: 'Cabin Sketch', cursive; color: #343d98; display: block; margin-bottom: 20px;}
+.menu-list h2 em{font-size: 1.7rem;}
+
+.menu-section{width: 100%; margin-top: 100px; transform: translateY(-230px); opacity: 0;}
+.taco-menu li{float: left; width: 48%; margin: 0 1%; height: 230px; position: relative; border-radius: 30px; transition: all .3s;margin-bottom: 20px;}
+.taco-menu li:hover{box-shadow: 0px 0px 20px #c0c0c0;}
+.taco-menu li a{width: 100%; height: 100%; display: inline-block;}
+.taco-menu li img{position: absolute; top: 10%; left: 5%;}
+.taco-menu li .taco-wrap{padding: 40px 0 0 240px;}
+
+.taco-wrap h3{font-size: 2rem; font-family: 'Architects Daughter', cursive; padding-bottom: 10px;}
+.taco-wrap .korean{font-size: 1.4rem; font-weight: bold;padding-bottom: 10px; display: inline-block;}
+.taco-wrap .menu-ex{color: rgb(68, 68, 68); font-weight: 600;}
+.taco-wrap .price{color: #343d98; font-size: 1.3rem; font-weight: 700; font-family: 'Architects Daughter', cursive; padding-top: 10px;}
+.taco-wrap .fas{color: #343d98;}
+
+.menu-list .more-menu{display: block; width: 80%; height: 50px; border-radius: 10px; border: 1px solid #343d98; margin: 50px auto 20px; text-align: center; line-height: 50px; color: #343d98; font-size: 1.6rem; font-weight: 700; transition: all .4s;}
+.menu-list .more-menu:hover{background-color: #343d98; color: #fff;}
+
+
+/* store */
+.section_02{width: 100%; padding-top: 100px;}
+
+.store h2 em{font-size: 1.7rem;}
+.store-title{text-align: center; margin-bottom: 100px; transform: translateY(-120px); opacity: 0;}
+.store > div{width: 50%; height: 300px; float: left; position: relative; overflow: hidden;}
+.store .store-bg{width: 100%; height: 100%; transition: transform .4s;}
+.store-wrap:hover .store-bg{transform: scale(1.06); cursor: pointer;}
+.store-wrap:hover .fas{position: absolute; animation-name: combi;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out}
+
+    @keyframes combi{
+        0%{left: 0px; top: 53px;}
+ 
+        50%{left: 0px; top: 60px;}
+
+        100%{left: 0px; top: 53px;}
+    }   
+.store-wrap:hover .address{padding-left: 20px;}
+
+.store .store-bg1{background: url(../images/store_01.png) no-repeat 0 0; background-size: cover;}
+.store .store-bg2{background: url(../images/store_03.png) no-repeat 0 0; background-size: cover;}
+.store .store-bg3{background: url(../images/store_03.png) no-repeat 0 0; background-size: cover;}
+.store .store-bg4{background: url(../images/store_02.png) no-repeat 0 0; background-size: cover;}
+
+.store-text{position: absolute; bottom: 50px; left: 40px;}
+.store-text h3{font-size: 2rem; color: #6a75f0;}
+.store-text .address{display: inline-block;padding-top: 20px; color: #fff; font-size: 1.2rem;}
+.store-text .fas{color: #6a75f0; }
+
+
+/* history */
+.section_03{width: 100%; padding-top:100px}
+.history{width: 1270px; margin: 0 auto; height: 950px;}
+.history h2{font-family: 'Cabin Sketch', cursive; font-size: 4rem; color: #343d98; margin-bottom: 90px; text-align: center; transform: translateY(-120px); opacity: 0;}
+
+.history-img{width: 50%; position: relative; height: 500px;}
+.history-img img:nth-of-type(1){width: 90%; transform: translateY(100px); opacity: 0;}
+.history-img img:nth-of-type(2){position: absolute; top: 70%; right: 0; width: 65%;transform: translateY(260px); opacity: 0;}
+.history-text{width: 46%;margin-left: 4%; height: 450px;transform: translateY(400px); opacity: 0;}
+.history-text p{font-size: 1.5rem; font-weight: 600; line-height: 1.9; color: #222;}
+.history-text img{width: 80%;}
+
+/* section_04 */
+.section_04{width: 100%; height: 420px; background:url(../images/fix_bg2.png) no-repeat center top fixed; background-size: cover; margin-top: 100px;}
+
+/* sns */
+.section_05{width: 100%; padding-top: 100px;}
+.sns-title{text-align: center; transform: translateY(-130px); opacity: 0;}
+.sns-title em{font-size: 1.7rem;}
+
+.sns{width: 1270px; margin: 0 auto;transform: translateY(-200px); opacity: 0;}
+.sns ul{width: 100%;}
+.sns ul li{width: 274px; height: 274px ;float: left;  position: relative; margin-right: 58px;  cursor: pointer; border-radius: 30px; overflow: hidden; transition: all .3s;}
+.sns ul li:last-child{margin-right: 0;}
+.sns ul li:hover .sns-box .box-wrap{opacity: 1;}
+.sns ul li:hover{transform: translateY(-15px); box-shadow: 0px 10px 9px gray;}
+
+.sns ul li .sns-box{position: absolute ;top: 0; left: 0; width: 100%; height: 100%;}
+.sns ul li .sns-box .box-wrap{ width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); opacity: 0; transition: all .5s;}
+.sns ul li .sns-box .box-wrap p{text-align: center; padding-top: 100px;}
+
+.box-wrap .more-btn{display: inline-block;  width: 40%;height: 35px; background-color: #343d98; color: #fff; border-radius: 30px; line-height: 35px; text-align: center; font-size: 1.1rem; color: #fff; margin-bottom: 10px;}
+.box-wrap span{color: #fff; font-size: 1.1rem; margin-left: 7px;}
+
+/* 미디어쿼리 */
+
+/* 아이패드 */
+@media all and (max-width:1024px){
+
+    .container{width: 100%;}
+    .menu-list{width: 100%;}
+    .menu-list h2{margin-bottom: 40px;}
+    .menu-section{width: 90%; margin: 0 5%;}
+    .taco-menu li{height: 420px; text-align: center;}
+    .taco-menu li img{position: absolute; top: 10%; left: 30%;}
+    .taco-menu li .taco-wrap{padding: 230px 0 0 0px;}
+
+    .store > div{width: 100%; height: 180px;}
+    
+    .history{width: 90%;margin: 0 5%; height: 800px;}
+    .history-text p{line-height: 1.5;}
+
+    .section_04{display: none;}
+
+    .sns{width:90% ; margin: 0 5%;}
+    .sns ul li{width: 22%; height: 180px; margin-right: 4%;}
+    .sns ul li:last-child{margin-right: 0%;}
+    .sns ul li img{width: 100%; height: 100%;}
+    .sns ul li .sns-box .box-wrap p{padding-top: 60px;}
+    .box-wrap .more-btn{width: 45%;}
+    .box-wrap span{color: #fff; margin-left: 4px;}
+
+}
+
+@media all and (max-width:768px){
+    .taco-menu li img{left: 25%;}
+
+    .history{height: 700px;}
+    .history-img img:nth-of-type(2){position: absolute; top: 50%; right: 0; width: 65%;transform: translateY(260px); opacity: 0;}
+    .history-text p{font-size: 1.2rem;}
+    .history-text .history-info{margin-top: 20px !important;}
+
+    .section_04{height: 300px;}
+
+    .sns ul li{width: 22%; height: 160px;}
+    .sns ul li .sns-box .box-wrap p{padding-top: 55px;}
+    .box-wrap .more-btn{width: 50%; height: 23px;line-height: 23px;}
+    .box-wrap span{margin-left: 4px;}
+
+    .section_04{margin-top: 0px;}
+}
+
+@media all and (max-width:500px){
+    .banner{height: 600px;}
+    .banner-img ul li{position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .banner-img ul li.banner_01{background: url(../images/banner_img_01_.png) no-repeat center center / 600px 600px}
+    .banner-img ul li.banner_01 span{position: absolute; top: 35%; left: 20%; transform: rotate(-15deg); font-size: 4rem;}
+
+    .banner-img ul li.banner_02{background: url(../images/banner.png) no-repeat center center / 600px 600px}
+
+    .banner-btn a{width: 30px; height: 30px;}
+    .banner-btn .prev-btn{position: absolute; left: 2%; top: 50%;}
+    .banner-btn .next-btn{position: absolute; right: 2%; top: 50%;}
+
+    .section_01,
+    .section_02,
+    .section_05{padding-top: 50px}
+
+
+
+    .taco-menu li{width: 100%; height: 300px; position: relative; border-radius: 30px; transition: all .3s;margin-bottom: 20px;}
+    .taco-menu li img{top: 10%; left: 30%; width: 130px; height: 130px;}
+    .taco-menu li .taco-wrap{padding: 180px 0 0 0px;}
+
+    .taco-wrap h3{font-size: 1.9rem;}
+    .taco-wrap .korean{font-size: 15px;}
+    .taco-wrap .menu-ex{display: none;}
+    .taco-wrap .price{font-size: 15px;}
+   
+    .section_03{padding-top:50px}
+    .store-title{margin-bottom: 30px;}
+    .store > div{height: 130px;}
+    .store-text{bottom: 40px; left: 20px;}
+    .store-text h3{font-size: 1.6rem}
+    .store-text .address{font-size: 1.1rem;}
+    .store-wrap:hover .fas{position: relative; animation:none}
+    .store-wrap:hover .address{padding-left: 0px;}
+ 
+    .history h2{margin-bottom: 30px;}
+    .history-img{width: 100%;}
+    .history-text{width: 100%;}
+
+    .sns ul li{width: 45%; height: 150px; margin: 0 2.5%; margin-bottom: 20px;}
+
+}  

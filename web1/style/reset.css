@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body,div,ul,li,a,form,button,h1,h2,h3,input,img,span,p,dl,dd,dt,address,select{margin: 0; padding: 0;}
+
+ul{list-style: none;}
+body,select,input,button{font-size: 13px; color: #333; font-family: 'Noto Sans KR','돋움',dotum, sans-serif;}
+select,input,image,button{vertical-align: middle;}
+
+img,input,select{border: 0 none;}
+
+
+
+a:link,
+a:visited{text-decoration: none;color: #333;}
+
+a:hover,
+a:active,
+a:focus{text-decoration: underline; color: #333;}
+
+address,em{font-style: normal;}
+table{border-collapse: collapse; width: 100%;}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.wrapper{width: 100%; position: relative; background-color: #f1f1f1; min-width: 1890px;}
+.membership-wrap{width: 1890px; position: relative; margin: 0 auto; padding-bottom: 300px;
+    background: url(../images/sub_login/login-background-img.png) no-repeat 0 0;}
+.membership{width: 1000px; margin: 0 auto;}
+
+.quick-banner{ width: 160px; height: 27px;margin-bottom: 130px; border: 1px dotted #666;padding: 2px 18px 6px 18px;}
+.quick-banner a{width: 160px; height: 27px;font-size: 14px; color: #f1f1f1;  display: block;
+    background: url(../images/contents/btn_next.png) no-repeat 125px 3px; line-height: 27px; }
+
+.membership-title{text-align: center; color: #fff; font-size: 45px; margin-bottom: 20px;}
+
+.membership-box{width: 1000px; height: 650px; background-color: #fff; padding: 40px 100px; box-sizing:border-box }
+.membership-box .member-step{width:815px; padding-bottom: 50px;}
+.membership-box .member-step li{width: 200px; float: left; 
+            background-color: #c1c1c1; text-align: center;
+             font-size: 16px; font-weight: 500; padding: 15px 0 ; color: #fff; margin-left: 5px;}
+.membership-box .member-step li:first-child{ margin-left: 0;}
+.membership-box .member-step .current-step{background-color: #284273;}
+
+
+/* type-box */
+.join-type{text-align: center;}
+.join-type li{width: 249px; height: 260px; border: 1px solid #cbcbcb; float: left; margin-left: 10px; background: url(../images/sub_login/join_set.png) no-repeat 0 0; }
+.join-type li:hover{background-color: #d5dced;}
+.join-type li a{width: 250px; height: 60px; display: inline-block; 
+    padding-top: 200px; font-size: 15px; font-weight: 500;}
+
+.join-type .icon-join1{background-position: 50px 3px}
+.join-type .icon-join2{background-position: -180px 3px}
+.join-type .icon-join3{background-position: -400px 3px}
+
+.join-notice{margin: 50px 0 0 50px; ; font-size: 15px; background: url(../images/sub_login/join_notice.png) no-repeat 0 7px; padding-left: 50px;}
+.join-notice span{color: rgb(255, 99, 71); font-weight: 600;}
+.join-notice .not-txt{color: #284273; font-weight: 600;}

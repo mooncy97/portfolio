@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+ <html lang="ko">
+ <head>
+ <meta  charset="utf-8"/>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>사이트의 제목넣기</title>
+ <meta name="robots" content="noindex, nofollow" />
+ <meta name="keywords" content="키워드넣기" />
+ <meta name="description" content="설명넣기"/>
+ <meta name="author" content="저자넣기"/>
+
+ <link rel="stylesheet" type="text/css" href="css/reset.css">
+ <link rel="stylesheet" type="text/css" href="css/common.css">
+ <link rel="stylesheet" type="text/css" href="css/layout.css">
+ <link rel="stylesheet" type="text/css" href="css/main.css">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0, user-scalable=yes">
+ 
+ <!-- js -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script type="text/javascript" src="js/main.js"></script>
+
+ <!-- bxslider -->
+ <link href="js/jquery.bxslider.css" rel="stylesheet" />
+ <script src="js/jquery.bxslider.js"></script>
+
+
+
+ <script>
+    $(document).ready(function(){
+       
+
+        var slider = $('.bxslider').bxSlider({
+                auto: true,
+                controls: false,
+                pagerCustom: '.bx-pager',
+                moveSlides: 3, //슬라이드 이동시 개수
+            })
+      
+    
+
+        $(document).on('click', 'bx-pager', function() {
+                slider.stopAuto();
+                slider.startAuto();
+            })
+
+
+            // 
+
+            var slider01 = $('.bxslider_01').bxSlider({
+                auto: true,
+                controls: true,
+                moveSlides: 2, //슬라이드 이동시 개수
+                pager: true, //현재 위치 페이지 표시 여부
+                pagerCustom: '.bx_pager_01'
+            })
+
+            //  
+	});
+
+
+            
+   
+</script>
+ </head>
+
+<body>
+    <div class="wrapper">
+        <header class="header clearfix">
+            <div class="head-wrap">
+                <img src="images/hera_logo.png" alt="HERA" width="76" height="39" class="fl mt10"/>
+
+                <a href="#" class="search"><img src="images/search.png" alt="검색아이콘" width="20" height="20"/></a>
+
+                <div class="search-bar">
+                    <form method="post" action="#" name="search-frm" class="search-frm">
+                        <input type="text" class="text-search pl10" name="search-frm" title="검색어를 입력하세요" placeholder="검색어를 입력하세요">
+                        <input type="image" class="search-icon" src="images/search.png" alt="검색버튼" width="11" height="11"/>
+                    </form>
+                </div>
+            
+
+                <a href="#" class="lnb-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>  
+
+            <div class="gnb-wrap">
+                <h2><img src="images/hera_logo.png" alt="HERA" width="76" height="39"/></h2>
+                <span><a href="#"><img class="close_btn" src="images/btn_allmenu_close.gif" alt="전체메뉴닫기" width="14" height="14"></a></span>
+
+                <nav class="gnb">
+                    <ul class="gnb-deth1">
+                        <li><a href="#">헤라스토리</a>
+                            <ul class="gnb-deth2">
+                                <li><a href="#">브랜드스토리</a></li>
+                                <li><a href="#">헤라히스토리</a></li>
+                                <li><a href="#">라이브러리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="season">시즌컬렉션</a></li>
+                        <li><a href="#">메이크업</a>
+                            <ul class="gnb-deth2">
+                                <li><a href="#">메이크업메인</a></li>
+                                <li><a href="#">페이스</a></li>
+                                <li><a href="#">립</a></li>
+                                <li><a href="#">아이</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">스킨케어</a>
+                            <ul class="gnb-deth2">
+                                <li><a href="#">스킨케어메인</a></li>
+                                <li><a href="#">제품라인</a></li>
+                                <li><a href="#">제품유형</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">프래그런스</a>
+                            <ul class="gnb-deth2">
+                                <li><a href="#">프래그런스 메인</a></li>
+                                <li><a href="#">제품라인</a></li>
+                                <li><a href="#">제품유형</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">#HERA</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+
+        <div class="container">
+
+            <section class="section_01">
+                <ul class="visual bxslider">
+                    <li>
+                        <div class="visual_list">
+                            <img src="images/visual_01.png" alt="" height="482"/>
+                            <div class="text wrap1">
+                                <h2>YOUTH ACTIVATING SERUM</h2>
+                                <p>하루만의 완벽한 안티에이징</p>
+                                <a href="#" class="more_btn">자세히보기</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="visual_list"> 
+                            <img src="images/visual_02.png" alt="" height="482"/>
+                            <div class="text wrap2">
+                                <h2>GLOW LASTING CUSHION</h2>
+                                <p>내 피부인 듯 얇게 빛나는 윤기</p>
+                                <a href="#" class="more_btn">자세히보기</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="visual_list">
+                            <img src="images/visual_03.png" alt="" height="482"/>
+                            <div class="text wrap3">
+                                <h2>SENSUAL POWDER MATTE</h2>
+                                <p>센슈얼 파우더 매트</p>
+                                <a href="#" class="more_btn">자세히보기</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+                <div class="visual-btn bx-pager">
+                    <a href="#" class="on" data-slide-index="0"><span class="skip">1</span></a>
+                    <a href="#" data-slide-index="1"><span class="skip">2</span></a>
+                    <a href="#" data-slide-index="2"><span class="skip">3</span></a>
+                </div>
+            </section>
+
+            <section class="section_02">
+                <h2 class="sec2_title">BEST SELLER</h2>
+
+                <div class="best-wrap">
+                    <ul class="best-list clearfix">
+                        <li>
+                            <div class="trr">
+                                <p>센슈얼 파우더 매트</p>
+                                <a href="#">구매하기</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="trr">
+                                <p>센슈얼 파우더 매트</p>
+                                <a href="#">구매하기</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="trr">
+                                <p>센슈얼 파우더 매트</p>
+                                <a href="#">구매하기</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="trr">
+                                <p>센슈얼 파우더 매트</p>
+                                <a href="#">구매하기</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="section_03">
+                <img src="images/brand_img.png" alt="HERA
+                당당하고 강인한 자아와 내면 그 깊은 곳에서부터 존재하는 나만의 아름다움을 스스로 발견하고
+                자신 있게 드러내는 것이 서울 뷰티에 대한 헤라의 신념입니다." class="brand_img" height="300"/>
+            </section>
+
+            <section class="section_04">
+                <h2 class="sec4_title">HERA'S PICK</h2>
+
+                <div class="list-wrap">
+                    <ul class="pick_list clearfix bxslider_01">
+                        <li>
+                            <img src="images/banner_img_01.png" alt="" height="430"/>
+                            <h2>블랙 파운데이션 SPF 15 / PA+</h2>
+                            <p>24시간 무너짐 없는 커버,<br/>
+                                시크한 세미 매트룩 블랙 커버 fit 파운데이션</p>
+                            <a href="#" class="view_more">자세히보기</a>
+                        </li>
+
+                        <li>
+                            <img src="images/banner_img_02.png" alt="" height="430"/>
+                            <h2>글로우 래스팅 쿠션 SPF 50+</h2>
+                            <p> 얇게 빛나는 윤기가<br/>
+                                답답함 없이 지속되는 씬 글로우 쿠션</p>
+                            <a href="#" class="view_more">자세히보기</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="banner_btn bx_pager_01">
+                    <a href="#" data-slide-index="0"><span class="skip">1</span></a>
+                    <a href="#" data-slide-index="1"><span class="skip">2</span></a>
+                </div>
+            </section>
+
+            <section class="section_05">
+                <video src="images/hera_video.mp4" muted="" loop="loop" autoplay="">
+                  </video>
+            </section>
+
+            <section class="section_06">
+                <h2>HERA SNS</h2>
+                <div class="sns_wrap">
+                    <ul class="sns clearfix">
+                        <li class="choice"><a href="#"><img src="images/sns_img_01.png" alt="sns이미지1"/></a></li>
+                        <li class="choice"><a href="#"><img src="images/sns_img_02.png" alt="sns이미지2"/></a></li>
+                        <li><a href="#"><img src="images/sns_img_03.png" alt="sns이미지3"/></a></li>
+                        <li class="choice"><a href="#"><img src="images/sns_img_01.png" alt="sns이미지3"/></a></li>
+                        <li class="choice"><a href="#"><img src="images/sns_img_02.png" alt="sns이미지3"/></a></li>
+                        <li><a href="#"><img src="images/sns_img_03.png" alt="sns이미지3"/></a></li>
+                    </ul>
+            </section>
+            
+        </div>
+
+        <fooer class="footer">
+            <div class="footer_back">
+                <ul class="footer_list">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+
+                <ul class="sns_icon">
+                    <li><a href="#"><img src="images/face.png" alt="페이스북" width="10" height="15"></a></li>
+                    <li><a href="#"><img src="images/insta.png" alt="인스타그램" width="15" height="15"></a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="유튜브" width="15" height="13"></a></li>
+                </ul>
+
+                <div class="address">
+                    <p>(주)아모레퍼시픽</p>
+                    <p>서울특별시 용산구 한강대로 100(한강로2가)</p>
+                </div>
+
+                <div class="copy-wrap">
+                    <p>고객상담팀(수신자요금부담) : 080-023-5454</p>
+                    <p class="copy"> © AMOREPACIFIC CORPORATION. All rights reserved. </p>
+                </div>
+            </div>
+        </fooer>
+        
+        <div class="dim"></div>
+    </div>
+</body>
+
+</html>
+

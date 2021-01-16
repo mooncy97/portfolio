@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+.wrapper{width: 100%; position: relative;background-color: #f1f1f1; }
+.login-wrap{width: 1890px; background: url(../images/sub_login/login-background-img.png) no-repeat 0 0; padding-bottom: 300px;
+            background-color: #f1f1f1; position: relative; margin: 0 auto;}
+.login{width: 650px; margin: 0 auto;}
+
+.quick-banner{ width: 160px; height: 27px;margin-bottom: 130px; border: 1px dotted #666;padding: 2px 18px 6px 18px;}
+.quick-banner a{width: 160px; height: 27px;font-size: 14px; color: #f1f1f1;  display: block;
+    background: url(../images/contents/btn_next.png) no-repeat 125px 3px; line-height: 27px; }
+
+
+
+.loginbar{font-size: 50px; color: #f1f1f1; font-weight: 500; 
+                        width: 100%; height: 84px; padding-left: 260px;
+                        margin-bottom: 35px; box-sizing: border-box; 
+                        background: url(../images/sub_login/login_title1.png) no-repeat 131px 0;}
+
+.login-box{width: 650px; height: 577px; background-color: #fff; box-sizing: border-box; 
+            padding: 70px 95px}
+#user-id, #user-pw{width: 458px; height: 64px; box-sizing: border-box;
+                    border: 1px solid#cbcbcb; margin-bottom: 15px;
+                    padding-left: 20px; font-size: 20px; color: #666;} 
+.login-sec1 .login-text .btn-login a{width:458px; height: 64px; background-color: #284273; 
+                                    color: #fff; display: inline-block;
+                                    text-align: center; line-height: 64px;
+                                    font-size: 20px;}
+.login-text .btn-login a:hover{text-decoration: none; background-color: #868686; color: #333;}
+
+.login-sec1 .check-btn{margin-top: 15px; text-align: center; font-size: 16px; color: #666; margin-bottom: 25px;}
+#keyboard{margin-left: 30px;}
+
+.login-sec2{border-top: 1px solid#cbcbcb; padding-top: 15px;}
+.login-sec2 .btn-join{width: 458px; height: 64px; display: inline-block;
+                        background-color: #3b578c; color: #fff;
+                        text-align: center; line-height: 64px; font-size: 20px; }
+.login-sec2 .btn-join:hover{background-color: #868686; color: #333; text-decoration: none;}
+
+.login-sec2 .sub-btn{margin-top: 25px; width: 458px;}                        
+.login-sec2 .sub-btn li{float: left; font-size: 15px; color: #666; margin-left: 55px; color: #666; font-size:15px;} 
+.login-sec2 .sub-btn li a:hover{font-weight: 600; color: #07c; text-decoration: none;}
+
+
+.login-footer{width: 900px; border-top: 1px solid #cbcbcb;
+                position: absolute; bottom: 40px; left: 500px;
+                 text-align: center; padding-top: 30px;}
+.login-footer span{padding-right: 7px;}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.wrapper{width: 100%; position: relative; background-color: #f1f1f1; overflow-x: hidden;}
+.membership-wrap{width: 1890px; height: 1300px; position: relative; margin: 0 auto;
+    background: url(../images/sub_login/login-background-img.png) no-repeat 0 0 }
+.membership{width: 1000px; margin: 0 auto;}
+
+.quick-banner{ width: 160px; height: 27px;margin-bottom: 130px; border: 1px dotted #666;padding: 2px 18px 6px 18px;}
+.quick-banner a{width: 160px; height: 27px;font-size: 14px; color: #f1f1f1;  display: block;
+    background: url(../images/contents/btn_next.png) no-repeat 125px 3px; line-height: 27px; }
+
+.membership-title{text-align: center; color: #fff; font-size: 45px; margin-bottom: 20px;}
+
+.membership-box{width: 1000px; height: 850px; background-color: #fff; padding:40px 100px; box-sizing: border-box}
+.membership-box .member-step{width:815px; padding-bottom: 50px;}
+.membership-box .member-step li{width: 200px; float: left; 
+            background-color: #c1c1c1;  text-align: center;
+             font-size: 16px; font-weight: 500; padding: 15px 0 ; color: #fff; margin-left: 5px;}
+.membership-box .member-step li:first-child{ margin-left: 0;}
+.membership-box .member-step .current-step{background-color: #284273;}
+
+.membership-box .chk-list{margin-bottom: 30px}
+
+.membership-box .chk-list p{background: url(../images/sub_login/imp-txt.png) no-repeat 0 8px; padding-left: 10px; font-size: 14px; color: #284273; font-weight: 500;}
+
+.membership-box .agree-chk{font-size: 14px; }
+.membership-box .agree-box .box1, .box2{width: 800px; height: 155px;border: 1px solid #cbcbcb; overflow: auto; margin-bottom: 5px; background-color:#f1f1f1;}
+
+.btn-join{text-align: center; margin-top: 70px;}
+.btn-join button{width: 90px; height: 40px; background-color: #284273; color: #fff; cursor: pointer;border: none; outline: none;}
+.btn-join .btn-cancel{margin-left: 60px; width: 120px; height: 40px; cursor: pointer;}
+.btn-join button:hover{background-color: tomato;}
